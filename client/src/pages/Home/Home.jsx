@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import NamingContest from './NamingContest';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -56,27 +57,7 @@ const Home = props => {
               </div>
             </div>
             <div className={styles.namingContestContainer}>
-              <section className={styles.namingContestSection}>
-                <div className={styles.namingContestInfo}>
-                  <div>
-                    <img src='https://www.squadhelp.com/html/html/static_images/h-icon1.svg' />
-                  </div>
-                  <div className={styles.namingContestText}>
-                    <h2 className={styles.namingContestHead}>
-                      Naming Contests
-                    </h2>
-                    <p className={styles.namingContestP}>
-                      Custom name suggestions from 100s of naming experts as you
-                      are guided through our naming agency-style process
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.namingContestLinkContainer}>
-                  <Link className={styles.namingContestLink} to='/startContest'>
-                    Get a Custom Name
-                  </Link>
-                </div>
-              </section>
+              <NamingContest />
             </div>
             <div className={styles.greyContainer}>
               <SlideBar
