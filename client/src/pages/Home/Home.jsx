@@ -160,7 +160,7 @@ const Home = props => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className={styles.firstPlatformContainer}>
               <FirstNamingContestPlaform />
             </div>
             <h2>How Do Name Contest Work?</h2>
