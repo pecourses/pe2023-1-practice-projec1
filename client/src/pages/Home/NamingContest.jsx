@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import styles from './Home.module.sass';
+import CONSTANTS from './../../constants';
+
+const { STATIC_IMAGES_PATH } = CONSTANTS;
 
 function NamingContest () {
   return (
     <section className={styles.namingContestSection}>
       <div className={styles.namingContestInfo}>
         <div>
-          <img src='https://www.squadhelp.com/html/html/static_images/h-icon1.svg' />
+          <img src={`${STATIC_IMAGES_PATH}namingContest.svg`} />
         </div>
         <div className={styles.namingContestText}>
           <h2 className={styles.namingContestHead}>Naming Contests</h2>
