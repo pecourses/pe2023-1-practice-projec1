@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import NamingContest from './NamingContest';
+import FirstNamingContestPlaform from './FirstNamingContestPlatform/FirstNamingContestPlaform';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -158,6 +159,9 @@ const Home = props => {
                   <span>Industries</span>
                 </div>
               </div>
+            </div>
+            <div>
+              <FirstNamingContestPlaform />
             </div>
             <h2>How Do Name Contest Work?</h2>
             <div className={styles.whiteContainer}>
